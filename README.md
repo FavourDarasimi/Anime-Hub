@@ -1,70 +1,92 @@
-# React + TypeScript + Vite
+# 🎌 Anime Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive anime discovery website built with React, TypeScript, and Tailwind CSS. Browse, search, and discover your favorite anime series with a beautiful, intuitive interface.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Core Features
 
-## Expanding the ESLint configuration
+- **Anime Discovery**: Browse through thousands of anime series
+- **Advanced Search**: Search anime by title with real-time results
+- **Category Filtering**: Filter by different categories (Top Anime, Currently Airing, Upcoming, etc.)
+- **Genre Filtering**: Browse anime by specific genres (Action, Adventure, Comedy, Drama, etc.)
+- **Year Filtering**: Filter anime by release year
+- **Score Filtering**: Filter anime by minimum score rating
+- **Infinite Scroll**: Seamless loading of more anime as you scroll
+- **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🎨 UI/UX Features
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Hero Section**: Engaging landing page with animated anime characters
+- **Hover Effects**: Interactive card animations with image scaling
+- **Score Display**: Star ratings that appear on hover
+- **Status Badges**: Visual indicators for airing status
+- **Loading States**: Smooth loading animations
+- **Back to Top**: Easy navigation back to the top of the page
+- **Dark Theme**: Beautiful dark theme optimized for anime viewing
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### 🔧 Technical Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Real-time Search**: Debounced search with instant results
+- **API Integration**: Powered by Jikan API (MyAnimeList)
+- **TypeScript**: Full type safety and better development experience
+- **Modern React**: Built with React 18 and modern hooks
+- **Performance Optimized**: Efficient rendering and data fetching
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Prerequisites
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-# Anime-Hub
+- Node.js (version 16 or higher)
+- npm or yarn package manager
+
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/yourusername/anime-hub.git
+   cd anime-hub
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Start the development server**
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:5173` to see the application
+
+## 🛠️ Built With
+
+### Frontend
+
+- **React 18** - Modern React with hooks
+- **TypeScript** - Type-safe JavaScript
+- **Vite** - Fast build tool and dev server
+- **Tailwind CSS** - Utility-first CSS framework
+- **React Query** - Data fetching and caching
+- **Axios** - HTTP client for API requests
+
+### APIs
+
+- **Jikan API** - Unofficial MyAnimeList API for anime data
+
+### Development Tools
+
+- **ESLint** - Code linting
+- **Prettier** - Code formatting
+- **React Spinners** - Loading animations
+
+## 📁 Project Structure
